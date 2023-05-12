@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jollibee</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="Assets/3f281336eba50a7a11e04f38c3f20555-removebg-preview.png" type="image/x-icon">
+</head>
+<style>
+    
+    header img {
+  height: 40px;
+  margin-right: 1px;
+  cursor: pointer;
+}
+#datetime-container {
+        font-size: 1em;
+        text-align: center;
+        margin-top: 10px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        font-weight: bold;
+      }
+      
+      #datetime-container span {
+        font-weight: bold;
+        font-size: 0.5em;
+        display: block;
+        margin-top: 20px;
+        text-transform: uppercase;
+      }
+      input:invalid {
+        animation: shake .15s ease-in-out 0s 2;
+        height: 20px;
+        margin-top: 12%;
+      }
+
+      @keyframes shake {
+        0% { margin-left: 0; }
+        25% { margin-left: -5px; }
+        75% { margin-left: 5px; }
+        100% { margin-left: 0; }
+      }
+
+</style>
+<div style="position: fixed; z-index: -1; width: 100%; height: 100%">
+    <video autoplay loop muted poster="" style="width: 100%; height:auto; background-position: center; background-size: cover; ">
+      <source src="Assets/videoplayback.mp4" type="video/mp4" style="display: flex;">
+    </video>
+  </div>
+  <div class="ripples">
+    <div class="ripples__dot"></div>
+  </div>
+  
+<body id="body"> 
+   
+    <header>
+        <img src="Assets/images-removebg-preview.png" alt="logo">
+        <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+        <button class="btnLogin-popup">Log in</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Log in</h2>
+            <form action="index.html">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="Email" pattern="[a-zA-Z-@-1-10-.,-]*" required>
+                    <label>Email</label>
+                </div>  
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">
+                    Remember me</label>
+                    <a href="#">Forgot Password</a>
+                </div>
+                <button type="submit" class="btn">Log in</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-Link">Register</a></p>
+                </div>
+                <div id="datetime-container">
+                    <span id="date"></span>
+                    <span id="time"></span>
+                </div>
+            </form> 
+        </div>
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="index.html">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="Text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="Mail" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    
+                    <label>Password</label>
+                    
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">
+                    I agree to the terms & Conditions</label>
+                    
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="main.js">
+    
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+<footer>
+  
+    <div class="footer">
+       <h1>Stay Connected</h1>
+        <a href="https://web.facebook.com/JollibeePhilippines?_rdc=1&_rdr"><ion-icon name="logo-facebook"></ion-icon><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/jollibee"><ion-icon name="logo-twitter"></ion-icon><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/jollibee/"><ion-icon name="logo-instagram"></ion-icon><i class="fa fa-instagram"></i></a>
+        <a href="https://invite.viber.com/?g2=AQAQPCykQNOvrUtxELL7p5Sygnqn%2FYWizA0azH8ATzTrJFzfK%2BujdOuHi%2Fma9f4C&lang=en"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        <a href="https://www.youtube.com/@JollibeePhilippinesOfficial"><ion-icon name="logo-youtube"></ion-icon></a>
+    </div>
+<nav class="category">
+    <a href="#" id="link1">About us</a>
+<a href="#" id="link2">Privacy Policy</a>
+<a href="#" id="link3">T&C</a>
+<a href="#" id="link4">Mission & Vision</a>
+<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" id="link5">Feedback</a>
+
+<dialog id="dialog1" class="modal">
+    <img src="Assets/head.png" alt="My image">
+    <h2>About Jollibee</h2>
+  <p>Jollibee is the largest fast food chain brand in the Philippines, operating a network of more than 1,500 stores in 17 countries. A dominant market leader in the Philippines, Jollibee enjoys the lion’s share of the local market that is more than all the other multinational fast food brands in PH combined. With a strict adherence to the highest standards of food quality, service and cleanliness, Jollibee serves great-tasting, high-quality and affordable food products to include its superior-tasting Chickenjoy, mouth-watering Yumburger, and deliciously satisfying Jolly Spaghetti among other delicious products.
+
+    Jollibee has embarked on an aggressive international expansion plan, with more than 270 international branches in the United States, Canada, Hong Kong, Macau, Brunei, Vietnam, Singapore, Malaysia, Saudi Arabia, United Arab Emirates, Qatar, Oman, Kuwait, Bahrain, Italy, Spain, and in the United Kingdom.</p>
+  <button id="closeButton1">Close</button>
+</dialog>
+
+<dialog id="dialog2" class="modal">
+    <img src="Assets/head.png" alt="">
+    <h1>PRIVACY POLICY</h1>
+    <h1>DESCRIPTION OF SERVICES</h1>
+    <p>Jollibee Foods Corporation Doing business under the name and style of Jollibee (“We” or “JFC”) is the Personal Information Controller, as defined under Republic Act No. 10173 or the Data Privacy Act of 2012, responsible for ensuring the privacy of the personal information you provide using this delivery website. As such Personal Information Controller, we shall process your personal information in accordance with the Data Privacy Act of 2012, its implementing rules and regulations, and this Privacy Policy</p>
+  <h1>WHAT WE COLLECT
+    To fulfill your delivery orders, we shall collect the following personal information:</h1>
+    <p>Full Name;
+        Delivery address;
+        E-mail address;
+        Telephone Number/Cellphone Number.
+        Details associated with your identification (ID), such as senior citizen ID or persons with disability ID details;
+        Facebook account user name, e-mail address and mobile number (if you have elected to register using Facebook Sign In);
+        Credit card information (if you have elected to save your credit card details); and
+        Order details.
+        
+        
+        If you provide the information identified above, you understand and agree that we will use such information for purposes described below in the “What We Do With the Information We Gather” section (i.e. for direct marketing purposes).
+        
+        The website stores browser level cookies for analytics and advertisement purposes. For the exhaustive list of cookies we collect, see the “Cookie Description” section below.</p>
+    <h1>HOW WE COLLECT</h1>
+    <p>We collect personal information once you register and create an account with us through this website or by signing up using your Facebook account. When you choose to create an account by linking it with an external third party service or application, such as Facebook, this feature will not modify nor allow the access of the content of your Facebook account. However, if you use your Facebook account to register your account, the following shall apply:
+
+        Your Facebook account name shall be your Account name in the website; and
+        The e-mail address of your Facebook account shall be used as the e-mail address for your Account.
+        The registered phone number of your Facebook account will also be used as your phone number in the website.
+        
+        You will also be registering an account by giving a password in the relevant space under the “Guest Information” page. If you want to proceed as a guest, do not insert a password on the spaces provided.
+        
+        By registering and creating an account with us, you understand and agree that we shall use your personal information in accordance with this Privacy Policy.
+        For registered users, we may also request for other personal information such as birthday, gender and other demographic information like preferences and interests and other information relevant to customer surveys and/or offers. If you provide these information, you understand and agree that we will use such information for purposes described below in the What We Do With the Information We Gather section (i.e. for direct marketing purposes).
+        Signing up for Promotions and Online Offers:
+        If you do not register/create an account but agree to subscribe to marketing emails by giving your email in the “Stay-up-to-date” portion of our website, we will keep the e-mail address provided for purposes of sending you updates on exclusive offers.
+        Order as Guest:
+        If you do not register/create an account nor give your email in the “Stay-up-to-date” portion but place an order with us through this website as a guest, we will ask for your full name, delivery address, e-mail address, and cellphone number but will not keep the information provided. However, we will keep your order history (identified by the order ID number sent to your email, without your corresponding personal information) for thirteen (13) months from the time such order was placed, for record purposes.
+        Saving Credit Card Details:
+        You have the option to save your credit card details for seamless payment transactions. Credit card details are stored and processed by our accredited service provider. You may manage saved credit card by: (1) adding credit card, (2) deleting saved credit card, or (3) setting a default credit card. Once you have saved your credit card details, you may pay using the same during check out without entering details such as the credit card number, expiration date and CVV. As part of the validation process, we will apply a test charge of Php10.00 when you save your credit card details. The test charge will be automatically triggered for voiding after validation of your credit card details. The option to save credit card details is applicable to registered users only.
+        Browsing:
+        If you simply browse through our website but without registering an account, we do not collect any of your personal information</p>
+        <h1>WHAT WE DO WITH THE INFORMATION WE GATHER</h1>
+        <p>We require this information for the following purposes:
+
+            To fulfill your delivery order;
+            To understand your needs;
+            To provide you with a better service, and
+            To facilitate internal record keeping, for the following reasons:
+            We may use the information to improve our products and services;
+            We may periodically send promotional emails about new products, special offers or other information which we think you may find interesting using the email address which you have provided;
+            From time to time, we may also use your information to contact you for market research purposes; and
+            We may contact you by phone or mail. We may use the information to customize the website according to your interests
+            
+            For purposes of this Privacy Policy, these purposes (other than the fulfillment of your delivery order), shall be referred to as “direct marketing purposes”.
+            
+            We also share your information with our service providers, subsidiaries, affiliates and franchisees, to fulfill your order. From time to time, we may also share your personal information with our subsidiaries, affiliates, partners and franchisees for their use and processing in accordance with this Privacy Policy.
+            
+            We do not sell, distribute or lease your personal information to third parties other than those stated above, unless we have your permission or are required by law to do so.
+            </p>
+        <h1>SECURITY STORAGE AND DISPOSAL</h1>
+        <p>We are committed to ensuring that your personal information we collect and store is secure. To prevent unauthorized access, processing or disclosure of your personal information, we have put in place suitable physical, electronic and managerial procedures to safeguard and secure the personal information we collect online such as but not limited to data encryption and access restrictions on our databases.
+
+            We store your personal information in a secured database, but which may be accessed by our service providers, subsidiaries, affiliates and franchisees for delivery services. We retain your personal information as long as your account is active or as long as necessary to fulfill your delivery orders. If there is no activity within thirteen (13) months, we shall dispose of your personal information in accordance with the relevant privacy rules and our internal guidelines.</p>
+            <h1>USER DATA DELETION UPON REQUEST</h1>
+            <p>You may request for the deletion of your personal information in our secured internal database. The process is as follows:
+
+                You may contact our Jollibee Customer Care to request deletion of personal information
+                
+                Customer Care – Jollibee
+                Contact Number: +63 917 131 8000
+                Email: feedback@jollibee.com.ph
+                
+                We will contact our service provider to delete your personal information.
+                Our service provider will delete your records in our internal database, as well as your messages to Jollibee Customer Care
+                Jollibee Customer Care will then revert to you to confirm deletion of your personal information</p>
+            <h1>LINKS TO OTHER WEBSITES</h1>
+            <p>Our website may contain links to other websites of interest as indicated below. The only links outside Jollibee domain the customer can be directed to from this website are Jollibee’s pages on social media:
+
+                Facebook
+                Twitter
+                YouTube: Jollibee Philippines
+                YouTube: Jollibee Studios
+                Instagram
+                
+                However, once you have used these links to leave our site, you should note that we do not have any control over these other sites. Therefore, we will not be responsible for the protection and privacy of any information which you provide whilst visiting such sites and such sites are not governed by this Privacy Policy. You should exercise caution and look at the privacy statement applicable to the website in question</p>
+                <h1>CONTROLLING YOUR PERSONAL INFORMATION</h1>
+                <p>You may choose to restrict the collection or use of your personal information in the following ways:
+
+                    Whenever you are asked to fill up a form on our website, any information you provide will be bound by the “What We Do With the Information We Gather” section. If you do not wish to receive any direct information or promotion, you may amend or request to opt out through our customer care email, feedback@jollibee.com.ph.
+                    If you believe that any of your personal information that we have is incorrect or incomplete, please email us as soon as possible on the e-mail address stipulated above. We will promptly correct any reported incorrect or incomplete information.</p>
+                <h1>UPDATING THIS PRIVACY POLICY</h1>
+                <p>Whenever necessary, we may, from time to time, update and/or revise this Privacy Policy. We shall inform you of any update or revision by placing the date of the latest version on top of this Privacy Policy.
+                </p>
+                <h1>INQUIRY ON THIS PRIVACY POLICY</h1>
+                <p>If you have any questions regarding this Privacy Policy, or our use of your personal information, please contact us through:
+
+                    The Data Protection Officer - Jollibee Foods Corporation
+                    E-mail: dpo@jfc.com.ph
+                    14th Floor, Jollibee Plaza, F. Ortigas Jr. Road, Ortigas Center
+                    Pasig City, Metro Manila, Philippines 1605
+                    
+                    In order to for us to attend to your queries expeditiously, we prefer that inquiries be made via e-mail.
+                </p>
+                <h1>HOW WE USE COOKIES</h1>
+                <p>A cookie is a small file which asks permission to be placed on your computer's hard drive. Once you agree, the file is added, and the cookie helps analyze web traffic or lets you know when you visit a site. Cookies allow web applications to respond to you as an individual. The web application can tailor its operations to your needs, likes and dislikes by gathering and remembering information about your preferences.
+
+                    We use traffic log cookies to identify which pages are being used. This helps us analyze data about web page traffic and improve our website in order to tailor it to customer needs. We only use this information for statistical analysis purposes and then the data is removed from the system. If you, however, want to delete cookies from your browser or device, we suggest that you use the option to delete cookies and other site and plug-in data, including data stored on your device from your browser settings normally found in browsing history.
+                    
+                    Overall, cookies help us provide you with a better website by enabling us to monitor which pages you find useful and which you do not. A cookie in no way gives us access to your computer or any information about you, other than the data you choose to share with us. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer. This may however prevent you from taking full advantage of the website.</p>
+<h1>COOKIE DESCRIPTION</h1>
+<p>Facebook cookie: This will be used for third party authentication via Facebook.
+    Analytics cookie: A first party browser-based cookie allows the site to measure audience behavior. There is no personally identifiable information stored in these cookies.
+    Advertising cookies: These are third party cookies (example, Facebook, Google etc) from our partners to re-target advertisements in their respective platforms.
+    </p>
+                    <button id="closeButton2">Close</button>
+</dialog>
+
+<dialog id="dialog3" class="modal">
+    <img src="Assets/head.png" alt="">
+    <h1>TERMS AND CONDITIONS FOR THE JOLLIBEE DELIVERY WEBSITE</h1>
+  <p>These Terms and Conditions shall apply to all orders of Jollibee products (“Products”) of a customer through this Jollibee Delivery Website (“Site”). By placing an order for Products through this Site, you understand, agree with, and accept: (i) these Terms and Conditions and any corresponding changes thereto which we may implement from time to time; and (ii) our Privacy Policy in connection with how we process your personal information collected from this Site
+    For purposes of these Terms and Conditions, “Jollibee”, “our” or “we” shall refer to Jollibee Foods Corporation, while “customer” or “you” shall refer to the customer who intends to purchase the Products from this Site..</p>
+    <h1>Territories Covered</h1>
+    <p>You understand and agree that this Site can only service the following areas, depending on the Order Fulfillment Option chosen. If your area is not within the Delivery Area below, you may visit the nearest Jollibee store.
+
+        Delivery Area
+        Jollibee offers delivery services only within Metro Manila, Bulacan, Pampanga, Bataan, Tarlac, Nueva Ecija, Cavite, Laguna, Batangas, Rizal (Cainta, Antipolo, Taytay, Angono and San Mateo), Cebu, Bacolod, Iloilo, Davao, Cagayan de Oro and selected areas of Baguio, Ilocos Norte, Ilocos Sur, Nueva Vizcaya, Zambales, La Union, Quezon Province, Bicol, Mindoro, Palawan, Tagbilaran, Calbayog, Tacloban/Ormoc, Dumaguete, Antique, General Santos, Zamboanga, Bukidnon, Butuan, Surigao, and Iligan.
+        
+        Each Jollibee delivery store has a dedicated delivery area which cannot be changed. Thus, any forced request for re-routing of order to another store is strictly prohibited.
+        </p>
+        <h1>Account Creation
+        </h1>
+        <p>If you decide to place an order through this Site, you will be asked to register by creating an account which requires your personal information such as name, complete delivery address, telephone or mobile number, email address and a password. Creating an account allows you to automatically fill-up all the necessary delivery details in your next order. Inputting and confirming a password on the “Create an Account” or “Guest Information” page of the website, along with other information, allows you to make an account. You must keep this password confidential and must not disclose it to anyone. If you believe someone else knows your password, please change your password immediately.
+
+            We reserve the right to suspend your registration if you violate any of these Terms and Conditions.
+            
+            When you choose to create an account by linking it with an external third party service or application, such as Facebook, this feature will not modify nor allow the access of the content of your Facebook account. However, if you use your Facebook account to create an account in this Site, the following shall apply:
+            Your Facebook account name shall be your Account name in the website;
+            The e-mail address of your Facebook account shall be used as the e-mail address for your Account; and
+            The registered phone number of your Facebook account will also be used as your phone number in the website
+            
+            If you wish to Order as Guest, the site will require your name, telephone or mobile number and complete delivery address on every use of the ordering platform. The information you provide will only be used for purpose of the pertinent delivery and for any subsequent issues on payment. If you are Ordering as a Guest, you need not input nor confirm any password on the pertinent page of the Site.
+            
+            You have the option to save your credit card details for seamless payment transactions. Credit card details are stored and processed by our accredited service provider. You may manage saved credit card by: (1) adding credit card, (2) deleting saved credit card, or (3) setting a default credit card. Once you have saved your credit card details, you may pay using the same during check out without entering details such as the credit card number, expiration date and CVV. As part of the validation process, we will apply a test charge of Php10.00 when you save your credit card details. The test charge will be automatically triggered for voiding after validation of your credit card details. The option to save credit card details is applicable to registered users only.
+            
+            If another person used your account to order Products on your behalf, with or without your knowledge, such order shall be subject to these Terms and Conditions, and you agree that the order shall be considered your own and will be charged to you.</p>
+  <h1>Fulfillment of Order</h1>
+  <p>The online order submitted through this ordering platform will be fulfilled via delivery only. The delivery order is fulfilled either through Jollibee Delivery riders or other third-party delivery services which we may engage. We reserve the right to revise or add order fulfillment options in the future.</p>
+            <h1>Submission of Order</h1>
+            <p>Upon submission of your online order, you are authorizing us to process your online order and preparation of the Products you have specified on your order form. However, we reserve the right to refuse the processing of your order without any notification should we find any incorrect or incomplete details, or any previous spurious transactions with the given personal information.
+
+                Also, non-response to SMS and calls from either store, or delivery rider may result to late or non-delivery of the Products and should not be taken against us. Additional verification call or confirmation call may be required to proceed with your order.</p>
+  <h1>Regular Order</h1>
+  <p>By submitting your order through this Site, you understand and agree that the processing of your order is subject to the following conditions:
+
+    The minimum food purchase for a delivery transaction is P200.00.
+    
+    There is a forty-five (45) minute delivery guarantee for single receipt transactions amounting to P1,100.00 and below. However, this delivery guarantee does not apply if there are more than 20 orders per transaction of the same product combinations.
+    
+    If we are unable to meet the 45 minute guarantee, we will give you a P200 Jollibee Gift Certificate. You understand and accept, however, that any delay due to heavy traffic, inclement weather, unavoidable technical difficulties in the stores, or similar or conditions or circumstances, are beyond our control and should not at any time be taken against us. Delivery services may also not be available in cases of extreme weather, natural disasters, and unavoidable technical difficulties in the store/s in your area.
+    
+    For Orders amounting to P1,101.00 and up you will receive a call from our store to verify your identity and your order details.
+    
+    Due to the volume of the Products ordered, we do not guarantee that orders will be delivered within the 45-minute delivery period and the store will coordinate with you on the delivery serving time.
+    
+    Orders above P3,300.00, are considered bulk orders and will not be accepted by the Site. Instead, the Site will prompt you to call our Hotline #87000 to place your order.
+    
+    Excessive requests of items such as ketchup, gravy, utensils and the like are subject to store discretion.
+    
+    Any other special request outside the list of the Jollibee product menu is strictly prohibited. Additional special request such as medicine, newspaper, cigarettes, grocery items and the likes will not be entertained.</p>
+               <h1>Advance Order</h1>
+               <p>If you wish to order in advance through this delivery website, you may place your order at least two (2) hours before your expected delivery time.</p>
+    <h1>Order Acceptance and Confirmation</h1>
+    <p>The acceptance of orders for the Products made through the Site shall be at the entire discretion of Jollibee. We reserve the right to decline to accept the order or deliver the Products without giving any reason.
+
+        Our acceptance of an order occurs when you receive an on-screen message or email message confirming that your order has been placed (“Order Confirmation”). The Order Confirmation is a record of our agreement to deliver the Products you ordered and your obligation to pay the price of the Products in full. The Order Confirmation will contain the following information:
+        
+        Your pertinent order number;
+        The date and time of your order;
+        The total amount payable;
+        The address to which your order will be delivered;
+        The Jollibee store that has received and will process your order; and
+        The contact number of the Jollibee store that has received your order.</p>
+        <h1>Changes of Order</h1>
+        <p>Changes in your order or delivery time can be made within five (5) minutes from the time that the order was placed, by calling the Jollibee store that received the order or by clicking “Message to Store” in the Order Confirmation page.
+            If you wish to change your order prior to delivery, please call (through the contact number provided in the Order Confirmation) or message (through the “Message to Store” feature of the site) the Jollibee store within the timeframe stated above, and provide the details of your order included in the Order Confirmation. Changes in your order that are confirmed by the pertinent Jollibee store will reset the forty-five (45) minute delivery guarantee time, and will likewise be subject to these Terms and Conditions. You understand that the total amount of your order will be changed should there be any changes in your order, and that you agree to pay the new total amount upon delivery. Thus:
+            If you paid for your order online via credit card, any additional price difference as a result of changing your order must be paid in cash, payable upon delivery.
+If, as a result of any change/s you make to your order, the total amount payable is less than the amount paid online via credit card, any amount paid in excess of the new total amount payable shall be refunded to you by your own bank. You understand and agree that in such a case, we will not process the refund on your behalf, and that you are personally responsible for processing the refund with your own issuing bank.,
+If you choose to pay by credit card upon delivery (card present), the total amount shall be chargeable and payable upon delivery.
+
+If any of the changes to order include promotions which are only available for limited periods, any changes to your order may mean that the promotions are no longer available by the time the changes are made.
+
+We reserve the right to refuse any modification in case the order has already been dispatched for delivery prior to receipt of your request.</p>
+            <h1>Cancellation of Orders</h1>   
+            <p>Orders may be cancelled within five (5) minutes from the time that the order was placed by calling or messaging the Jollibee store that received your order. Cancellation immediately after the 5th minute from the time that the Order Confirmation was received will no longer be valid. You understand and agree that cancellation beyond the 5th minute will require you to pay the full amount of the order placed by you.
+
+                We reserve the right to refuse any cancellation in case the order has already been dispatched for delivery prior to receipt of your request.
+                
+                If payment is made via credit card and the cancellation of order was successful, it will be your responsibility to contact the issuing bank to cancel the payment made.</p>
+            <h1>Prices and Payment</h1>
+            <p>Unless otherwise stated in writing, the Product prices quoted on this Site are inclusive of value-added taxes, any other applicable taxes and delivery charge. The Product prices on this Site are subject to change without prior notice.
+
+                To check the price/s of the Product you want to order, please click the Checkout button to see the breakdown and total amount due.
+                
+                You can pay by any of the following methods:
+                
+                Cash upon delivery
+                Cashless mode of payment on-site (credit card and/or debit card), subject to the condition that onsite credit card payment may not be available 24 hours. Cashless payment on-site will involve a redirection to a third-party payment gateway. You acknowledge that Jollibee will not be responsible for any information provided in the payment gateway.
+                Cashless mode of payment upon delivery. Cashless payment upon delivery is only available in select NCR and provincial Delivery stores.
+                
+                If your order is placed using a credit card, such card should be valid on the date of delivery of your order.
+                
+                A Senior Citizen (SC) or Person with Disability (PWD) discount may be applied on the delivery transaction, provided you comply with the Delivery Conditions stated below.
+                
+                We reserve our right to refuse to deliver any order if for whatever reason we believe that payment will be refused at any stage.</p>
+                <h1>Refund</h1>
+                <p>In case of a refund, any refund for payments made in cash would need to be processed by our Customer Services team by calling #87000. Refunds for orders paid online via credit card or upon delivery via credit card must be processed by you through your issuing bank.</p>
+                <h1>Delivery Conditions</h1>
+                <p>You agree to accept delivery of the Products at the agreed time and place of delivery, subject to the specific delivery conditions below:
+
+                    Delivery Time
+                    The arrival time in our delivery service guarantee will be based on our rider’s arrival at the gate of your subdivisions, villages, factories, industrial areas and other gated communities (as the case may be); while the arrival time in buildings, hospitals, condominiums and hotels will be based on our rider’s arrival at the lobby.
+                    We shall exert reasonable efforts to meet the guaranteed delivery time, where applicable. You understand and accept, however, that any delay due to traffic, inclement weather or similar or analogous conditions or circumstance, are beyond our control and should not at any time be taken against us.
+                    
+                    Product Availability
+                    You understand and agree that Product/s are subject to availability at the time of delivery. If the Products you ordered are not available, we may offer you a reasonable substitute Product or equivalent quality and price or we may advise you through phone call (local Philippines), SMS or electronic mail (outside Philippines) for alternative Product/s. You understand that should you choose to order other Product/s, this may affect the purchase price.
+                    
+                    ID Validation
+                    For credit card transactions payable upon delivery, you will be requested to present a valid ID to our delivery rider for validation.
+                    
+                    If a Senior Citizen (SC) or Person with Disability (PWD) discount was applied on the delivery transaction, the SC or PWD must be physically present at the time and place of the delivery, and the SC or PWD card must be presented to our rider for validation.</p>
+                <h1>Promotions (Special Offers)</h1>
+                <p>From time to time, products may be subject to special offers. Any special offer shall be subject to these Terms and Conditions. In case of inconsistency between the special offer and these Terms and Conditions, the latter shall prevail. We reserve the right to change the conditions and/or availability of special offers or withdraw them at our discretion. However, we will honor any order received before the withdrawal or changes on the special offers. All special offers are valid only within the promotional period, are subject to change and are not valid in conjunction with other offers, unless otherwise stated.</p>
+                <h1>Limitation of Liability</h1>
+                <p>We shall not be liable for any loss, expense, cost or damage arising out arising directly or indirectly out of or in connection with the delay beyond the estimated time or date of delivery, availability of product/s at any given time, force majeure, and any circumstances beyond our control, and over which we could not have avoided even with the exercise of reasonable care, or any indirect or unforeseeable loss suffered or incurred by customers or third parties. In any event, our liability for any given transaction shall not exceed the total price charged for the relevant Products.
+
+                    The Products ordered should be consumed within one (1) hour from their actual receipt. We will not be liable for any event that may arise as a result/consequence of consuming the Products beyond the specified time.</p>
+                   <h1>Privacy Policy</h1>
+                   <p>Our Privacy Policy in connection with how we process your personal information collected from this Site, and any changes thereto, which we may implement from time to time, may be found in the Privacy Policy. You agree that with your acceptance of these Terms and Conditions, you have read, understood and accepted our Privacy Policy.</p>
+                   <h1>Updating these Terms and Conditions</h1> 
+                   <p>Whenever necessary, we may, from time to time, update and/or revise these Terms and Conditions. We shall inform you of any update or revision by placing the date of the latest version on top of these Terms and Conditions.</p>
+                  <h1>Contact us</h1>
+                  <p>If you have a) concerns or feedback on your orders made directly from Jollibee and b) questions regarding the aforementioned this Terms and Conditions, please contact us through:
+
+                    Customer Care Hotline: (02) 8898-7777
+                    For orders made through Grabfood and Foodpanda, place your feedback through these links:
+                    
+                     https://help.grab.com/passenger/en-ph/
+                     m.me/foodpandaphilippines
+                    
+                    Note that you will be leaving this page and will be directed to the specific helpdesks of our service providers.</p>
+                   <button id="closeButton3">Close</button>
+</dialog>
+
+<dialog id="dialog4" class="modal">
+    <img src="Assets/head.png" alt="">
+    <h1>Mission</h1>
+    <p><b>To serve great tasting food, bringing the joy of eating to everyone.</b></p>
+    <h1>Vision</h1>
+    <p><b>To be one of the Top 5 Restaurant Companies in the World</b></p>
+    <br></br>
+    <br></br>
+    <h1>Mission & Vision</h1>
+    <p><b>All our brands are trusted and well-loved, craved around the world:
+        Renowned for consistently great tasting food.
+        Recognized for high value for money.
+        Endeared for warm and sincere distinct service to our customers.
+        Admired for our beautiful stores in excellent location.
+        We are acknowledged as one of the Best Companies to Work for, regarded for our efficient systems and processes, highly engaged teams and people-focused culture.</b></p>
+  <button id="closeButton4">Close</button>
+</dialog>
+
+<dialog id="dialog5">
+  <p>This is dialog box 5!</p>
+  
+</dialog>
+
+<script>
+
+const link1 = document.getElementById("link1");
+const link2 = document.getElementById("link2");
+const link3 = document.getElementById("link3");
+const link4 = document.getElementById("link4");
+
+const dialog1 = document.getElementById("dialog1");
+const dialog2 = document.getElementById("dialog2");
+const dialog3 = document.getElementById("dialog3");
+const dialog4 = document.getElementById("dialog4");
+
+const closeButton1 = document.getElementById("closeButton1");
+const closeButton2 = document.getElementById("closeButton2");
+const closeButton3 = document.getElementById("closeButton3");
+const closeButton4 = document.getElementById("closeButton4");
+
+
+link1.addEventListener("click", function(event) {
+  event.preventDefault();
+  dialog1.showModal();
+});
+
+closeButton1.addEventListener("click", function() {
+  dialog1.close();
+});
+
+link2.addEventListener("click", function(event) {
+  event.preventDefault();
+  dialog2.showModal();
+});
+
+closeButton2.addEventListener("click", function() {
+  dialog2.close();
+});
+
+link3.addEventListener("click", function(event) {
+  event.preventDefault();
+  dialog3.showModal();
+});
+
+closeButton3.addEventListener("click", function() {
+  dialog3.close();
+});
+
+link4.addEventListener("click", function(event) {
+  event.preventDefault();
+  dialog4.showModal();
+});
+
+closeButton4.addEventListener("click", function() {
+  dialog4.close();
+});
+
+
+</script>
+</nav>
+</footer>
+</html>

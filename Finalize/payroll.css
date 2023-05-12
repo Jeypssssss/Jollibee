@@ -1,0 +1,22 @@
+body {
+	background: white;
+	position: relative;
+}
+#title {
+	text-align: center;
+}
+#employee-info h1 {
+	text-align: center;
+}
+
+#deductions h2 {
+	text-align: center;
+}
+table td {
+	padding: 5px;
+	width: 30%;
+}
+#tSalary {
+	position: relative;
+	float: right;
+}

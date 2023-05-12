@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="shortcut icon" href="Assets/3f281336eba50a7a11e04f38c3f20555-removebg-preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="home2.css">
+</head>
+<body>
+  <header>
+    <div class="img">
+      <a href="https://www.google.com/search?q=jollibee+background&source=lnms&tbm=isch&sa=X&ved=2ahUKEwifv5-Py6n-AhVZtlYBHfnUCU8Q_AUoAXoECAEQAw&biw=1360&bih=695&dpr=1#imgrc=EpptdZW1sqlZ8M">
+      <img src="Assets/3f281336eba50a7a11e04f38c3f20555-removebg-preview.png" alt=""> </a>
+      </div>
+    <nav>
+    <div class="container">
+      <a href="">Home</a>
+      <a href="">history</a>
+      <a href="">Services</a>
+      <a href="">Mission-Vision</a>
+      <a href="">Employee</a>
+      <button id="logout-btn" class="btn"><ion-icon name="log-out-outline"></ion-icon></button>  
+    </div>
+      
+      </nav>
+  </header>
+  
+
+    
+    <main>
+      <h2>Welcome to Jollibee</h2>
+      <p>We provide high-quality services for our clients.</p>
+    </main>
+  
+</body>
+<script>
+  function logout() {
+    // Clear user data and tokens
+    localStorage.clear();
+    
+    // Redirect to login page or home page
+    window.location.href = "login.html";
+  }
+
+  document.getElementById("logout-btn").addEventListener("click", logout);
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

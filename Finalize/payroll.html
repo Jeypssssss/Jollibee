@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        
+        <meta name="description" content="Your description">
+        <meta name="author" content="Your name">
+
+        
+        <meta property="og:site_name" content="" /> 
+        <meta property="og:site" content="" /> 
+        <meta property="og:title" content=""/> 
+        <meta property="og:description" content="" /> 
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" /> 
+        <meta name="twitter:card" content="summary_large_image"> 
+        <title>Payroll</title>
+        
+        
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome-all.min.css" rel="stylesheet">
+        <link href="css/swiper.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="payroll.css">
+        
+        
+        <link rel="icon" href="Assets/3f281336eba50a7a11e04f38c3f20555-removebg-preview.png">
+    </head>
+    <body>
+        
+        
+        <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+            <div class="container">
+
+                
+                <a class="navbar-brand logo-image" href="index.html"><img src="Assets/3f281336eba50a7a11e04f38c3f20555-removebg-preview.png" alt="alternative" style="width: 20%; height: 20%;"></a> 
+
+                
+                <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#services">Service Offered</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#projects">Related</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="org.html">Organizational Chart</a></li>
+                                <li><div class="dropdown-divider"></div></li>
+                                <li><a class="dropdown-item" href="payroll.html">Payroll</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <span class="nav-item social-icons">
+                        <span class="fa-stack">
+                            <a href="https://web.facebook.com/JollibeePhilippines/?_rdc=1&_rdr">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/Jollibee">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </span>
+                </div> 
+            </div>
+        </nav>
+        <header class="ex-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 offset-xl-1">
+                        <h1>Payroll</h1>
+                    </div> 
+                </div> 
+            </div> 
+        </header>
+        <div id="payroll" name="payroll">
+            <div name="employee-info" id="employee-info">
+                <h1>Jollibee</h1>
+                <h1>Payroll System</h1>
+                <table>
+                    <tr>
+                        <td>
+                            <form>
+                                <input type="text" id="employeeName" name="employeeName">
+                            </form>
+                        </td>
+                        <td>Name of Employees</td>
+                        <td>:<output name="eName" id="eName"></output></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form>
+                                <input type="number" id="dailySalary" name="dailySalary">
+                            </form>
+                        </td>
+                        <td>DAILY SALARY</td>
+                        <td>:Php <output name="eDSalary" id="eDSalary"></output></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form>
+                                <input type="number" id="daysOfWork" name="daysOfWork">
+                            </form>
+                        </td>
+                        <td>Days of Work</td>
+                        <td>:<output name="eDays" id="eDays"></output></td>
+                    </tr>	
+                    <tr>
+                        <td>
+                            <form>
+                                <input type="number" id="allowance" name="allowance" value="500" disabled>
+                            </form>
+                        </td>
+                        <td>Allowance per month</td>
+                        <td>:Php <output name="eAllow" id="eAllow"></output></td>
+                        <!-- submit button to output the total salary and store the data here -->
+                    </tr>	
+                    <tr>
+                        <td></td>
+                        <td>Total Salary</td>
+                        <td>:Php <output id="tSalary" name="tSalary"></output></td>
+                    </tr>
+                    
+                </table>
+                <br>
+            </div>
+    
+            <hr width="80%">
+    
+            <div name="deductions" id="deductions">
+                <h2>DEDUCTIONS</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <form>
+                                <input type="number" id="sss" name="sss">
+                            </form>
+                        </td>
+                        <td>SSS</td>
+                        <td>:Php <output id="eSSS" name="eSSS"></output></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form>
+                                <input type="number" id="bir" name="bir">
+                            </form>
+                        </td>
+                        <td>BIR</td>
+                        <td>:Php <output id="eBir" name="eBir"></output></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form>
+                                <input type="number" id="pagIbig" name="pagIbig" value="100" disabled>
+                            </form>
+                        </td>
+                        <td>Pag-ibig</td>
+                        <td>:Php <output id="ePag" name="ePag"></output></td>
+                        <td>
+                            <button onclick="myFuntion()">Submit</button>
+                        </td>
+                        
+                    </tr>
+                </table>
+                <br>
+            </div>
+    
+            <hr width="80%">
+    
+            <div name="total" id="total">
+                <table>
+                    <tr>				
+                        <td>TOTAL DEDUCTION</td>
+                        <td>:Php <output id="tDed" name="tDed"></output></td>
+                    </tr>
+                    <tr>
+                        <td>NET PAY</td>
+                        <td>:Php <output id="netPay" name="netPay"></output></td>					
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <form>
+                                <button onclick="window.print()">Print</button>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-col first">
+                            <h6>Jollibee</h6>
+                            <p class="p-small">Note that you will be leaving this page and will be directed to the specific helpdesks of our service providers.</p>
+                        </div> 
+                        <div class="footer-col second">
+                            <h6>Links</h6>
+                            <ul class="list-unstyled li-space-lg p-small">
+                                <li>Important: <a href="#">Terms & Conditions</a>, <a href="#">Privacy Policy</a></li>
+                                <li>Menu: <a href="#header">Home</a>, <a href="#services">Services</a>, <a href="#projects">Projects</a>, <a href="#contact">Contact</a></li>
+                            </ul>
+                        </div> 
+                        <div class="footer-col third">
+                            <span class="fa-stack">
+                                <a href="https://web.facebook.com/JollibeePhilippines/?_rdc=1&_rdr">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="https://twitter.com/Jollibee">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="https://www.instagram.com/jollibee/?hl=en">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <p class="p-small"> <a href="mailto:contact@name.com"><strong> feedback@jfc.com.ph</strong></a></p>
+                        </div> 
+                    </div>
+                </div>
+            </div> 
+        </div> 
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="p-small">© 2022 Jollibee Foods Corporation. All rights reserved.</p>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn">
+            <img src="images/up-arrow.png" alt="alternative">
+        </button>
+        
+        <script src="js/bootstrap.min.js"></script> 
+        <script src="js/swiper.min.js"></script> 
+        <script src="js/purecounter.min.js"></script> 
+        <script src="js/isotope.pkgd.min.js"></script> 
+        <script src="js/scripts.js"></script> 
+        <script src="payroll.js"></script>
+    </body>
+</html>
